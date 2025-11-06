@@ -11,9 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 // Configuración de MySQL (XAMPP)
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: '', // XAMPP por defecto no tiene contraseña
-  database: 'pbazar_db'
+  user: 'bazar_user',
+  password: 'ChupaloKarolDance123',
+  database: 'bazarlp'
 });
 
 // Conectar a MySQL
