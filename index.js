@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 // Configuración de MySQL desde variables de entorno
 const db = mysql.createConnection({
   host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
+  user: process.env.DB_USER || 'bazar_user',
+  password: process.env.DB_PASSWORD || 'ChupaloKarolDance123',
   database: process.env.DB_NAME || 'pbazar_db',
   port: process.env.DB_PORT || 3306
 });
